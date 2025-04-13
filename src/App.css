@@ -1,42 +1,116 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+.btn {
+  transition: all 0.3s ease;
+  font-size: 22px;
+}
+.btn:active{
+  background-color: #676664 !important;
+  color:white !important;
+}
+.btn:hover{
+  background-color:#343332;
+  color:white;
+}
+button.\+,
+button.\/,
+button.\*,
+button.\-,
+button.\= {
+  background-color: #fa9e0d;
+  color:black;
+}
+button.\+:hover,
+button.\/:hover,
+button.\*:hover,
+button.\-:hover,
+button.\=:hover {
+  background-color: #fa9e0d;
+  color:black;
+}
+button.\+:active,
+button.\/:active,
+button.\*:active,
+button.\-:active,
+button.\=:active {
+  background-color: #f9af38 !important;
+  color:black !important;
+}
+button.AC,
+button.\%,
+button.\+\/-{
+  background-color: #a2a2a2;
+}
+button.AC:hover,
+button.\%:hover,
+button.\+\/-:hover{
+  background-color: #a2a2a2;
+  color:black;
+}
+button.AC:active,
+button.\%:active,
+button.\+\/-:active{
+  background-color: #bababa !important;
+  color:black !important;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.\30, 
+button.\31, 
+button.\32,
+button.\33,
+button.\34,
+button.\35,
+button.\36,
+button.\37,
+button.\38,
+button.\39,
+button.\.{
+  background-color:#343332 ;
+  color:white
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
-.card {
-  padding: 2em;
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  min-width: 300px;
+  height: 500px;
+  background-color: #ccc;
+  border-radius: 20px;
 }
+.displayScreen {
 
-.read-the-docs {
-  color: #888;
+  min-height: 100px;
+  width: 100%;
+  background-color: #535252;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  overflow-y: hidden;
+
+}
+.result{
+  width:250px;
+  word-wrap: break-word; 
+  white-space: normal;
 }
